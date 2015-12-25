@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.YoneticiKasaIslemleriController">
+   <children>
+      <Rectangle fx:id="kasa2_rek" arcHeight="5.0" arcWidth="5.0" fill="#85ffbb" height="222.0" layoutX="195.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle fx:id="kasa3_rek" arcHeight="5.0" arcWidth="5.0" fill="#85ffbb" height="222.0" layoutX="370.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle fx:id="kasa4_rek" arcHeight="5.0" arcWidth="5.0" fill="#85ffbb" height="222.0" layoutX="545.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Rectangle fx:id="kasa1_rek" arcHeight="5.0" arcWidth="5.0" fill="#85ffbb" height="222.0" layoutX="20.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="155.0" />
+      <Label layoutX="20.0" layoutY="385.0" text="Nakit Islemleri:" />
+      <ComboBox fx:id="select_kasa_box" layoutX="20.0" layoutY="327.0" onAction="#getIndex" prefHeight="25.0" prefWidth="681.0" promptText="Kasa Sec" />
+      <Text fx:id="bakiye4" layoutX="545.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Text fx:id="bakiye3" layoutX="370.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Text fx:id="bakiye2" layoutX="195.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Text fx:id="bakiye1" layoutX="20.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Button fx:id="eksilt_button" disable="true" layoutX="603.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#eksilt" prefHeight="25.0" prefWidth="98.0" text="Eksilt" />
+      <Button fx:id="ekle_button" disable="true" layoutX="497.0" layoutY="381.0" mnemonicParsing="false" onMouseClicked="#ekle" prefHeight="25.0" prefWidth="98.0" text="Ekle" />
+      <TextField fx:id="nakit_field" disable="true" layoutX="131.0" layoutY="381.0" prefHeight="25.0" prefWidth="356.0" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="109.0" prefWidth="155.0" text="KASA 1" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="435.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#raporButton" prefHeight="50.0" prefWidth="125.0" text="Rapor" />
+      <Button layoutX="572.0" layoutY="476.0" mnemonicParsing="false" onMouseClicked="#girisButton" prefHeight="50.0" prefWidth="125.0" text="Giris Ekrani" />
+      <Button layoutX="298.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#personelIslemleriButton" prefHeight="50.0" prefWidth="125.0" text="Personel Islemleri" />
+      <Button layoutX="161.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#ac" prefHeight="50.0" prefWidth="125.0" text="Kasa Ac" />
+      <Button layoutX="24.0" layoutY="475.0" mnemonicParsing="false" onMouseClicked="#kapat" prefHeight="50.0" prefWidth="125.0" text="Kasa Kapat" />
+      <Label alignment="CENTER" layoutX="196.0" layoutY="109.0" prefWidth="155.0" text="KASA 2" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="546.0" layoutY="109.0" prefWidth="155.0" text="KASA 4" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="370.0" layoutY="109.0" prefWidth="155.0" text="KASA 3" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="370.0" layoutY="141.0" prefWidth="155.0" text="Bakiye:" textAlignment="CENTER" underline="true" />
+      <Label alignment="CENTER" layoutX="545.0" layoutY="141.0" prefWidth="155.0" text="Bakiye:" textAlignment="CENTER" underline="true" />
+      <Label alignment="CENTER" layoutX="195.0" layoutY="141.0" prefWidth="155.0" text="Bakiye:" textAlignment="CENTER" underline="true" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="141.0" prefWidth="155.0" text="Bakiye:" textAlignment="CENTER" underline="true" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="222.0" prefWidth="155.0" text="Personel:" textAlignment="CENTER" underline="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label alignment="CENTER" layoutX="195.0" layoutY="222.0" prefWidth="155.0" text="Personel:" textAlignment="CENTER" underline="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label alignment="CENTER" layoutX="545.0" layoutY="222.0" prefWidth="155.0" text="Personel:" textAlignment="CENTER" underline="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label alignment="CENTER" layoutX="370.0" layoutY="222.0" prefWidth="155.0" text="Personel:" textAlignment="CENTER" underline="true">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Text fx:id="personel1" layoutX="20.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Text fx:id="personel2" layoutX="195.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Text fx:id="personel3" layoutX="370.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Text fx:id="personel4" layoutX="545.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="155.0" />
+      <Label alignment="CENTER" layoutX="195.0" layoutY="30.0" prefHeight="19.0" prefWidth="330.0" text="KASA ISLEMLERI" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

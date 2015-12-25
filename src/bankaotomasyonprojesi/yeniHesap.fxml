@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.YeniHesapController">
+   <children>
+      <TextField fx:id="vade_tutari" disable="true" layoutX="96.0" layoutY="474.0" prefHeight="25.0" prefWidth="174.0" />
+      <Label layoutX="14.0" layoutY="474.0" prefHeight="25.0" prefWidth="94.0" text="Tutar:" />
+      <Label layoutX="362.0" layoutY="474.0" prefHeight="25.0" prefWidth="94.0" text="Faiz Oranı:" />
+      <TextField fx:id="faiz_orani" disable="true" layoutX="456.0" layoutY="474.0" prefHeight="25.0" prefWidth="250.0" />
+      <Label layoutX="362.0" layoutY="405.0" prefHeight="25.0" prefWidth="94.0" text="Vade Tipi:" />
+      <TextField fx:id="vade_tipi" disable="true" layoutX="456.0" layoutY="405.0" prefHeight="25.0" prefWidth="250.0" />
+      <TextField fx:id="vade_suresi" disable="true" layoutX="456.0" layoutY="439.0" prefHeight="25.0" prefWidth="250.0" />
+      <Label layoutX="362.0" layoutY="439.0" prefHeight="25.0" prefWidth="94.0" text="Vade Süresi:" />
+      <Label layoutX="14.0" layoutY="439.0" prefHeight="25.0" prefWidth="94.0" text="Vade Sonu:" />
+      <Label layoutX="14.0" layoutY="369.0" prefHeight="30.0" prefWidth="121.0" text="Hesap Detayları:" />
+      <Label layoutX="14.0" layoutY="405.0" prefHeight="25.0" prefWidth="94.0" text="Vade Başı:" />
+      <TextField fx:id="hesap_no_field" layoutX="74.0" layoutY="310.0" prefHeight="25.0" prefWidth="469.0" />
+      <Label layoutX="12.0" layoutY="310.0" prefHeight="25.0" prefWidth="84.0" text="Hesap No:" />
+      <CheckBox fx:id="vadeli_check" layoutX="14.0" layoutY="335.0" mnemonicParsing="false" onMousePressed="#vadeliCheck" prefHeight="25.0" prefWidth="155.0" text="Vadeli Hesap" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="100.0" text="Hesap Bilgileri:" />
+      <Button layoutX="581.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#kaydetButton" prefHeight="50.0" prefWidth="125.0" text="Kaydet" />
+      <ComboBox fx:id="para_birimi" layoutX="554.0" layoutY="310.0" prefWidth="150.0" promptText="Para Birimi" />
+      <DatePicker fx:id="vade_basi" disable="true" layoutX="96.0" layoutY="405.0" />
+      <DatePicker fx:id="vade_sonu" disable="true" layoutX="96.0" layoutY="439.0" />
+      <TableView fx:id="hesap_table" layoutX="8.0" layoutY="44.0" prefHeight="262.0" prefWidth="709.0">
+         <columns>
+            <TableColumn fx:id="hesap_no" prefWidth="156.0" text="Hesap NO:" />
+            <TableColumn fx:id="hesap_turu" minWidth="0.0" prefWidth="149.0" text="Hesap Türü:" />
+            <TableColumn fx:id="bakiye" prefWidth="148.0" text="Bakiye:" />
+            <TableColumn fx:id="doviz_cinsi" prefWidth="126.0" text="Döviz Cinsi:" />
+            <TableColumn fx:id="hesap_durumu" prefWidth="126.0" text="Durum:" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

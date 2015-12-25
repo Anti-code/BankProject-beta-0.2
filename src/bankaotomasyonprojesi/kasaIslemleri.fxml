@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#detect" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.KasaIslemleriController">
+   <children>
+      <ListView fx:id="devir_list" layoutX="14.0" layoutY="158.0" prefHeight="335.0" prefWidth="694.0" />
+      <Label layoutX="14.0" layoutY="119.0" prefHeight="25.0" prefWidth="133.0" text="Devredilecek Tutar:" />
+      <TextField fx:id="tutar_field" layoutX="156.0" layoutY="119.0" prefHeight="25.0" prefWidth="550.0" />
+      <Label layoutX="14.0" layoutY="84.0" prefHeight="25.0" prefWidth="133.0" text="Kasa Bakiyesi:" />
+      <Label layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="133.0" text="Devralan Kişi:" />
+      <ComboBox fx:id="devralan_box" layoutX="155.0" layoutY="49.0" prefHeight="25.0" prefWidth="550.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" text="Devreden Kişi:" />
+      <Button layoutX="446.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#devretButton" prefHeight="50.0" prefWidth="125.0" text="Devret" />
+      <Button layoutX="583.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#quitButton" prefHeight="50.0" prefWidth="125.0" text="Tamam" />
+      <Text fx:id="personel_ad_soyad" layoutX="156.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="550.0" />
+      <Text fx:id="bakiye_text" layoutX="156.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="550.0" />
+   </children>
+</AnchorPane>

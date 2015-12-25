@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onMouseEntered="#onDetect" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.AnamenuController">
+   <children>
+      <TableView fx:id="musteri_table" layoutX="14.0" layoutY="14.0" prefHeight="392.0" prefWidth="692.0">
+         <columns>
+            <TableColumn fx:id="musteri_no" prefWidth="156.0" text="MusteriNo:" />
+            <TableColumn fx:id="hesap_no" minWidth="0.0" prefWidth="149.0" text="HesapNo:" />
+            <TableColumn fx:id="yapilan_islem" prefWidth="148.0" text="YapilanIslem:" />
+            <TableColumn fx:id="bakiye" prefWidth="126.0" text="Bakiye:" />
+            <TableColumn fx:id="tarih_saat" prefWidth="126.0" text="Tarih/saat:" />
+         </columns>
+      </TableView>
+      <Button layoutX="424.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#girisButton" prefHeight="50.0" prefWidth="125.0" text="Giris Ekrani" />
+      <Button layoutX="150.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#musteriIslemleri" prefHeight="50.0" prefWidth="125.0" text="Müşteri İşlemleri" />
+      <Button layoutX="12.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#raporButton" prefHeight="50.0" prefWidth="125.0" text="Rapor" />
+      <Button layoutX="287.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#devirIslemleri" prefHeight="50.0" prefWidth="125.0" text="Devir İşlemleri" />
+      <Button layoutX="580.0" layoutY="509.0" mnemonicParsing="false" onMouseClicked="#siramatikButton" prefHeight="50.0" prefWidth="125.0" text="Sıramatik" />
+      <Text fx:id="siramatik" layoutX="583.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="120.0">
+         <font>
+            <Font size="65.0" />
+         </font>
+      </Text>
+      <Text fx:id="bitis_saati" layoutX="580.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bitiş Saati: --:--" textAlignment="CENTER" wrappingWidth="125.0" />
+      <Text fx:id="kasa_bakiyesi" layoutX="141.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="270.7294921875">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label layoutX="14.0" layoutY="463.0" prefHeight="25.0" prefWidth="120.0" text="Kasa Bakiyesi:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

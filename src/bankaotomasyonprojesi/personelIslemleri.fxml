@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.PersonelIslemleriController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="133.0" text=" Personel Bilgileri:" />
+      <TableView fx:id="personel_table" layoutX="14.0" layoutY="85.0" prefHeight="392.0" prefWidth="692.0">
+         <columns>
+            <TableColumn fx:id="personel_id" prefWidth="83.0" text="Personel ID" />
+            <TableColumn fx:id="personel_kasa" prefWidth="90.0" text="Kasa No" />
+            <TableColumn fx:id="personel_tc" minWidth="0.0" prefWidth="118.0" text="TC No" />
+            <TableColumn fx:id="personel_ad" prefWidth="189.0" text="Adı Soyadı:" />
+            <TableColumn fx:id="personel_tel" minWidth="0.0" prefWidth="227.0" text="Telefon:" />
+         </columns>
+      </TableView>
+      <TextField fx:id="search_field" layoutX="14.0" layoutY="50.0" prefHeight="25.0" prefWidth="642.0" promptText="Aranacak Bilgiyi Giriniz" />
+      <Button layoutX="665.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#searchButton" prefHeight="25.0" prefWidth="43.0" text="Ara" />
+      <Button layoutX="24.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#ekleButton" prefHeight="50.0" prefWidth="125.0" text="Ekle" />
+      <Button layoutX="161.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#duzenleButton" prefHeight="50.0" prefWidth="125.0" text="Düzenle" />
+      <Button layoutX="298.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#silButton" prefHeight="50.0" prefWidth="125.0" text="Sil" />
+      <Button layoutX="572.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#anamenuButton" prefHeight="50.0" prefWidth="125.0" text="Ana Menü" />
+      <ComboBox fx:id="kasa_box" layoutX="439.0" layoutY="487.0" prefHeight="50.0" prefWidth="125.0" promptText="        Kasa Sec" />
+   </children>
+</AnchorPane>

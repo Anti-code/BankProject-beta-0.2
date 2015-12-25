@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="290.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="bankaotomasyonprojesi.LoginController">
+   <children>
+      <TextField fx:id="personel_id" layoutX="26.0" layoutY="78.0" prefHeight="25.0" prefWidth="232.0" promptText="Personel ID" />
+      <PasswordField fx:id="personel_sifre" layoutX="26.0" layoutY="126.0" prefHeight="25.0" prefWidth="232.0" promptText="Personel Sifre" />
+      <Button layoutX="29.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#loginButton" prefHeight="25.0" prefWidth="232.0" text="GIRIS" />
+   </children>
+</AnchorPane>

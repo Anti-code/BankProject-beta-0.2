@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#update" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.HesapIslemleriController">
+   <children>
+      <Button layoutX="572.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#havaleYap" prefHeight="50.0" prefWidth="125.0" text="Havale" />
+      <Button layoutX="298.0" layoutY="505.0" mnemonicParsing="false" onMouseClicked="#hesapAc" prefHeight="50.0" prefWidth="125.0" text="Hesap Açma" />
+      <Button layoutX="435.0" layoutY="505.0" mnemonicParsing="false" onMouseClicked="#hesapKapat" prefHeight="50.0" prefWidth="125.0" text="HesapKapatma" />
+      <Button layoutX="161.0" layoutY="505.0" mnemonicParsing="false" onMouseClicked="#paraYatir" prefHeight="50.0" prefWidth="125.0" text="Para Yatır" />
+      <Button layoutX="24.0" layoutY="505.0" mnemonicParsing="false" onMouseClicked="#paraCek" prefHeight="50.0" prefWidth="125.0" text="Para Çek" />
+      <Button layoutX="665.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#searchButton" prefHeight="25.0" prefWidth="43.0" text="Ara" />
+      <TextField fx:id="search_field" layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="642.0" promptText="Müşteri Numarası Giriniz" />
+      <TableView fx:id="hesap_table" layoutX="14.0" layoutY="103.0" prefHeight="357.0" prefWidth="692.0">
+         <columns>
+            <TableColumn fx:id="hesap_no" prefWidth="156.0" text="Hesap NO:" />
+            <TableColumn fx:id="hesap_turu" minWidth="0.0" prefWidth="149.0" text="Hesap Türü:" />
+            <TableColumn fx:id="bakiye" prefWidth="148.0" text="Bakiye:" />
+            <TableColumn fx:id="doviz_cinsi" prefWidth="126.0" text="Döviz Cinsi:" />
+            <TableColumn fx:id="hesap_durumu" prefWidth="126.0" text="Durum:" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="32.0" prefHeight="25.0" prefWidth="133.0" text=" Hesap Bilgileri:" />
+      <TextField fx:id="para_field" layoutX="24.0" layoutY="473.0" prefHeight="25.0" prefWidth="260.0" />
+      <Text fx:id="feedback" layoutX="294.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="408.0" />
+   </children>
+</AnchorPane>

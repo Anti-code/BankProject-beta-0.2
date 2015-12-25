@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankaotomasyonprojesi.PersonelEkleController">
+   <children>
+      <Label layoutX="14.0" layoutY="47.0" prefHeight="35.0" prefWidth="138.0" text="Kimlik Bilgileri:" />
+      <Label layoutX="14.0" layoutY="493.0" prefHeight="35.0" prefWidth="120.0" text="Üniversite:" />
+      <Label layoutX="369.0" layoutY="47.0" prefHeight="25.0" prefWidth="138.0" text="İletişim Bilgileri:" />
+      <TextField fx:id="cell_field" layoutX="470.0" layoutY="97.0" prefWidth="235.0" />
+      <TextField fx:id="officephone_field" layoutX="470.0" layoutY="132.0" prefHeight="25.0" prefWidth="235.0" />
+      <TextField fx:id="tc_field" layoutX="115.0" layoutY="132.0" prefHeight="25.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="128.0" prefHeight="35.0" prefWidth="100.0" text="TC.Kimlik No:" />
+      <Label layoutX="14.0" layoutY="268.0" prefHeight="35.0" prefWidth="100.0" text="Baba Adı:" />
+      <TextField fx:id="father_field" layoutX="115.0" layoutY="272.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="198.0" prefHeight="35.0" prefWidth="100.0" text="Soyadı:" />
+      <Label layoutX="369.0" layoutY="163.0" prefHeight="35.0" prefWidth="100.0" text="Ev Numarası:" />
+      <Label layoutX="14.0" layoutY="303.0" prefHeight="35.0" prefWidth="100.0" text="Anne Adı:" />
+      <TextField fx:id="mother_field" layoutX="115.0" layoutY="307.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="163.0" prefHeight="35.0" prefWidth="100.0" text="Adı:" />
+      <TextField fx:id="name_field" layoutX="115.0" layoutY="167.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="459.0" prefHeight="35.0" prefWidth="120.0" text="Öğrenim Durumu:" />
+      <TextField fx:id="housephone_field" layoutX="470.0" layoutY="167.0" prefHeight="25.0" prefWidth="235.0" />
+      <Label layoutX="369.0" layoutY="128.0" prefHeight="35.0" prefWidth="100.0" text="İş Numarası:" />
+      <Label layoutX="369.0" layoutY="202.0" prefHeight="35.0" prefWidth="100.0" text="Adres:" />
+      <Label layoutX="14.0" layoutY="424.0" prefHeight="35.0" prefWidth="138.0" text="Öğrenim Bilgileri:" />
+      <TextField fx:id="homeland_field" layoutX="115.0" layoutY="377.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="373.0" prefHeight="35.0" prefWidth="100.0" text="Doğum Yeri:" />
+      <Label layoutX="14.0" layoutY="338.0" prefHeight="35.0" prefWidth="100.0" text="Doğum Tarihi:" />
+      <TextField fx:id="last_field" layoutX="115.0" layoutY="202.0" prefWidth="235.0" />
+      <TextField fx:id="secure_field" layoutX="115.0" layoutY="237.0" prefWidth="235.0" />
+      <Label layoutX="14.0" layoutY="233.0" prefHeight="35.0" prefWidth="100.0" text="Güvenlik Kodu:" />
+      <TextArea fx:id="address_field" layoutX="470.0" layoutY="202.0" prefHeight="172.0" prefWidth="235.0" />
+      <Label layoutX="369.0" layoutY="93.0" prefHeight="35.0" prefWidth="100.0" text="Cep Numarası:" />
+      <Button layoutX="550.0" layoutY="472.0" mnemonicParsing="false" onMouseClicked="#cancelButton" prefHeight="50.0" prefWidth="125.0" text="İptal" />
+      <Button layoutX="550.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#saveButton" prefHeight="50.0" prefWidth="125.0" text="Kaydet" />
+      <Label layoutX="14.0" layoutY="97.0" prefHeight="25.0" prefWidth="100.0" text="Sifre:" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="19.0" prefWidth="330.0" text="PERSONEL KAYDI" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sifre_field" layoutX="115.0" layoutY="97.0" prefHeight="25.0" prefWidth="235.0" />
+      <DatePicker fx:id="birthdate_picker" layoutX="115.0" layoutY="343.0" prefHeight="25.0" prefWidth="235.0" />
+      <TextField fx:id="education_box" layoutX="115.0" layoutY="464.0" prefHeight="25.0" prefWidth="235.0" />
+      <TextField fx:id="college_box" layoutX="115.0" layoutY="498.0" prefHeight="25.0" prefWidth="235.0" />
+   </children>
+</AnchorPane>
